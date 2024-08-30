@@ -94,7 +94,7 @@ namespace AleksandrN_TARpv23
         }
 
 
-        public static string Toimingud_Numbridega(double arv1, double arv2, double arv3, double arv4, double arv5, double massivKogus)
+        public static (double sum, double kesk, double korr) Toimingud_Numbridega(double arv1, double arv2, double arv3, double arv4, double arv5, double massivKogus)
         {
             double sum;
             sum = arv1 + arv2 + arv3 + arv4 + arv5;           
@@ -102,9 +102,7 @@ namespace AleksandrN_TARpv23
             kesk = (arv1 + arv2 + arv3 + arv4 + arv5) / massivKogus;
             double korr;
             korr = arv1 * arv2 * arv3 * arv4 * arv5;
-            string vastus = Console.WriteLine(sum, kesk, korr);
-            return vastus;
-
+            return (sum, kesk, korr);
         }
     }
 }
