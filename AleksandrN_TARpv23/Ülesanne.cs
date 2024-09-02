@@ -31,48 +31,48 @@ namespace AleksandrN_TARpv23
 
 
             //3
-            var users = new (string Name, int Age)[5];
+            //var users = new (string Name, int Age)[5];
 
-            // Küsimuste tsükkel
-            for (int i = 0; i < users.Length; i++)
-            {
-                Console.WriteLine($"Sisestage {i + 1}. kasutaja nimi:");
-                string name = Console.ReadLine();
 
-                Console.WriteLine($"Sisestage {i + 1}. kasutaja vanus:");
-                int age = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < users.Length; i++)
+            //{
+            //    Console.WriteLine($"Sisestage {i + 1}. kasutaja nimi:");
+            //    string name = Console.ReadLine();
 
-                users[i] = (name, age);
-            }
+            //    Console.WriteLine($"Sisestage {i + 1}. kasutaja vanus:");
+            //    int age = int.Parse(Console.ReadLine());
 
-            // Summaarse vanuse arvutamine
-            int totalAge = users.Sum(user => user.Age);
+            //    users[i] = (name, age);
+            //}
 
-            // Aritmeetilise keskmise arvutamine
-            double averageAge = users.Average(user => user.Age);
 
-            // Vanima inimese leidmine
-            var oldestUser = users.OrderByDescending(user => user.Age).First();
+            //int totalAge = users.Sum(user => user.Age);
 
-            // Noorima inimese leidmine
-            var youngestUser = users.OrderBy(user => user.Age).First();
 
-            // Väljasta tulemused
-            Console.WriteLine($"\nSummaarne vanus: {totalAge}");
-            Console.WriteLine($"Aritmeetiline keskmine vanus: {averageAge:F2}");
-            Console.WriteLine($"Vanem kasutaja: {oldestUser.Name}, Vanus: {oldestUser.Age}");
-            Console.WriteLine($"Noorem kasutaja: {youngestUser.Name}, Vanus: {youngestUser.Age}");
+            //double averageAge = users.Average(user => user.Age);
+
+
+            //var oldestUser = users.OrderByDescending(user => user.Age).First();
+
+
+            //var youngestUser = users.OrderBy(user => user.Age).First();
+
+
+            //Console.WriteLine($"Summaarne vanus: {totalAge}");
+            //Console.WriteLine($"Aritmeetiline keskmine vanus: {averageAge:F2}");
+            //Console.WriteLine($"Vanem kasutaja: {oldestUser.Name}, Vanus: {oldestUser.Age}");
+            //Console.WriteLine($"Noorem kasutaja: {youngestUser.Name}, Vanus: {youngestUser.Age}");
 
             //4
-            string userInput = "";
+            //    string userInput = "";
 
-            while (userInput.ToLower() != "elevant")
-            {
-                Console.WriteLine("Osta elevant ära!");
-                userInput = Console.ReadLine();
-            }
+            //    while (userInput.ToLower() != "elevant")
+            //    {
+            //        Console.WriteLine("Osta elevant ära!");
+            //        userInput = Console.ReadLine();
+            //    }
 
-            Console.WriteLine("Aitäh, et lõpuks elevandi ostsid!");
+            //    Console.WriteLine("Aitäh, et lõpuks elevandi ostsid!");
         }
     }
 }

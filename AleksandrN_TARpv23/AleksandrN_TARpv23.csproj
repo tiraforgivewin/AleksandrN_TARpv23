@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>AleksandrN_TARpv23.Ülesanne</StartupObject>
+    <StartupObject>AleksandrN_TARpv23.ClassMain</StartupObject>
     <ApplicationIcon>armor_soldier_ninja_avatar_wheel_war_warrior_helm_game_icon_262426.ico</ApplicationIcon>
   </PropertyGroup>
 

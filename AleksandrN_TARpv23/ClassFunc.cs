@@ -103,6 +103,12 @@ namespace AleksandrN_TARpv23
             double korr;
             korr = arv1 * arv2 * arv3 * arv4 * arv5;
             return (sum, kesk, korr);
+
+
+
+
+            
+
         }
     }
 }
